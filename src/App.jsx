@@ -10,13 +10,12 @@ export default function App() {
   return (
     <main>
       <div id="game-container">
-        <div className="flex justify-between items-center ">
+        <div className="flex flex-col sm:flex-row justify-between items-center ">
           <Player1 isActive={isXTurn ? `active` : ""} symbol="X" />
           <Player2 isActive={!isXTurn ? `active` : ""} symbol="O" />
         </div>
         <GameBoard />
       </div>
-      LOG
     </main>
   );
 }
